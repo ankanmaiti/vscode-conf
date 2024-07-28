@@ -20,66 +20,143 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // switch b/w buffers
     {
-      "before": ["<S-h>"],
-      "commands": [":bprevious"]
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
     },
     {
-      "before": ["<S-l>"],
-      "commands": [":bnext"]
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
     },
     // splits window
     {
-      "before": ["leader", "v"],
-      "commands": [":vsplit"]
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
     },
     {
-      "before": ["leader", "s"],
-      "commands": [":split"]
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        ":split"
+      ]
     },
     // focus panes
     {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
     },
     {
-      "before": ["<C-j>"],
-      "commands": ["workbench.action.focusBelowGroup"]
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
     },
     {
-      "before": ["<C-k>"],
-      "commands": ["workbench.action.focusAboveGroup"]
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
     },
     {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.focusRightGroup"]
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
     },
     // NICE TO HAVE
     {
-      "before": ["<leader>", "b", "d"],
-      "commands": [":bd"]
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
+      "commands": [
+        ":bd"
+      ]
     },
     {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
     },
     {
-      "before": ["<C-p>"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<C-p>"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["leader", "f", "f"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "leader",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["<S-k>"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
+      "before": [
+        "<S-k>"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
     },
     {
-      "before": ["leader", "c", "f"],
-      "commands": ["editor.action.formatDocument"]
+      "before": [
+        "leader",
+        "c",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     }
   ],
-
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "leader",
+        "leader"
+      ],
+      "after": [
+        "a",
+        "f"
+      ]
+    }
+  ],
   "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
@@ -95,10 +172,23 @@
     "**/.wasp/out": true
   },
   // "search.quickOpen.includeHistory": false,
-
   "editor.accessibilitySupport": "off",
   "laravel-pint.enable": true,
   "workbench.tree.indent": 16,
   "explorer.compactFolders": false,
-  "window.menuBarVisibility": "compact"
+  "window.menuBarVisibility": "compact",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "sqltools.useNodeRuntime": true,
+  "workbench.activityBar.location": "hidden"
 }
